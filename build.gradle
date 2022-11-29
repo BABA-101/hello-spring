@@ -1,0 +1,23 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.0.0'
+	id 'io.spring.dependency-management' version '1.1.0'
+}
+
+group = 'hello'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+
+repositories {
+	mavenCentral() //mavenCentral 사이트에서 라이브러리를 다운받아라.
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf' //선택한 라이브러리
+	implementation 'org.springframework.boot:spring-boot-starter-web' // 선택한 라이브러리
+	testImplementation 'org.springframework.boot:spring-boot-starter-test' //테스트 라이브러리 기본으로 들어감
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
