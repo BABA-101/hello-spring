@@ -15,7 +15,8 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf' //선택한 라이브러리
 	implementation 'org.springframework.boot:spring-boot-starter-web' // 선택한 라이브러리
-	testImplementation 'org.springframework.boot:spring-boot-starter-test' //테스트 라이브러리 기본으로 들어감
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'junit:junit:4.13.1'//테스트 라이브러리 기본으로 들어감
 }
 
 tasks.named('test') {

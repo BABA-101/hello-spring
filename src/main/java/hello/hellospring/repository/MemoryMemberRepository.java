@@ -35,6 +35,11 @@ public class MemoryMemberRepository implements MemberRepository {
         //store에 있는 멤버들 반환
         return new ArrayList<>(store.values());
     }
+
+    // 클리어용 함수
+    public void clearStore(){
+        store.clear();
+    }
 }
 //작성하다 잘 돌아가는지 테스트 하고싶다? 이제 src/test를 이용 => 테스트 케이스
 
